@@ -5,11 +5,11 @@ import classes from './style.module.css';
 function render1(){
   return []
 }
-function Tesla() {
+function usa() {
   const [News, setData] = UseState(()=> render1());
   UseEffect(()=>{
     const loadNews= async()=>{
-      const resp = await axios.get("https://newsapi.org/v2/everything?q=tesla&from=2021-09-24&sortBy=publishedAt&apiKey=18dde8a47aa34ac8b657a9c7a1a76592")
+      const resp = await axios.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=18dde8a47aa34ac8b657a9c7a1a76592")
       setData(resp.data.articles);
     };
     loadNews();
@@ -35,4 +35,4 @@ function Tesla() {
   )
 }
 
-export default Tesla
+export default usa

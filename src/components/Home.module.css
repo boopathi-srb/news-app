@@ -3,7 +3,7 @@
   min-height: 100vh;
   place-items: center;
   text-align: center;
-  background-color: rgb(61, 60, 60);
+  background-color: #161718;
 }
 .greeting{
   color: floralwhite;
@@ -16,14 +16,14 @@
 }
 .card{
   max-width: 80ch;
-  backdrop-filter: blur(80%);
+  backdrop-filter: blur(10%);
   border-radius: 20px;
-  box-shadow: 4px 2px 20px  black; 
+  box-shadow: 4px 2px 20px  white; 
   margin-top: 50px;
   overflow: hidden;
   padding: 5rem 0 0;
   text-align: center;
-  background-color: rgb(231, 226, 225);
+  /* background-color: rgb(231, 226, 225); */
   overflow: hidden;
   transition: transform 400ms ease;
 }
@@ -52,6 +52,7 @@
 }
 .card_title{
   position: relative;
+  color: #ee6c4d;
   
 }
 .card_title::after{
@@ -59,7 +60,7 @@
   position: absolute;
   height: 4px;
   left: calc(var(--padding)*-1);
-  bottom: -5px;
+  bottom: -10px;
   width: calc(100% + var(--padding));
   background-color: chartreuse;
   transform: scaleX(0);

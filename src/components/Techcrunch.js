@@ -2,8 +2,11 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import classes from './style.module.css';
 
+function render1(){
+  return []
+}
 function Tech() {
-  const [news, setData]= useState([]);
+  const [news, setData]= useState(()=> render1());
   
   useEffect(()=>{
     const loadNews= async()=>{

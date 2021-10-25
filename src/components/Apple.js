@@ -2,8 +2,11 @@ import React, {UseState, UseEffect} from 'react'
 import axios from 'axios';
 import classes from './tech.module.css';
 
+function render1(){
+  return []
+}
 function Apple() {
-  const [News, setData] = UseState([]);
+  const [News, setData] = UseState(()=> render1());
   UseEffect(()=>{
     const loadNews= async()=>{
       const resp = await axios.get("https://newsapi.org/v2/everything?q=apple&from=2021-10-23&to=2021-10-23&sortBy=popularity&apiKey=18dde8a47aa34ac8b657a9c7a1a76592")
