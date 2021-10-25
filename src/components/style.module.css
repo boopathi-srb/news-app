@@ -1,0 +1,24 @@
+
+.wrapper{
+  max-width: 80ch;
+  backdrop-filter: blur(80%);
+  border-radius: 20px;
+  box-shadow: 4px 2px 20px  black; 
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 5rem 0 0;
+  text-align: center;
+  background-color: rgb(231, 226, 225);
+  overflow: hidden;
+  transition: transform 400ms ease;
+}
+.wrapper>img{
+  width: 15rem;
+  height: 10rem;
+  padding:2px; 
+  border-radius: 20px;
+}
+.wrapper>h3{
+  font-size: 1em;
+  font-weight: 600;
+}

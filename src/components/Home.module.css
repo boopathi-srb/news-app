@@ -1,0 +1,141 @@
+.body{
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  text-align: center;
+  background-color: rgb(61, 60, 60);
+}
+.greeting{
+  color: floralwhite;
+}
+.App{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+.card{
+  max-width: 80ch;
+  backdrop-filter: blur(80%);
+  border-radius: 20px;
+  box-shadow: 4px 2px 20px  black; 
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 5rem 0 0;
+  text-align: center;
+  background-color: rgb(231, 226, 225);
+  overflow: hidden;
+  transition: transform 400ms ease;
+}
+
+.card:hover, .card:focus-within{
+  transform: scale(1.05);
+}
+.card>img{
+  width: 15rem;
+  height: 10rem;
+  padding:2px; 
+  border-radius: 20px;
+}
+.cardcontent{
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: none;
+}
+ 
+
+.card:hover .cardcontent, .card:focus-within {
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 0.8)
+  );
+}
+.card_title{
+  position: relative;
+  
+}
+.card_title::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding)*-1);
+  bottom: -5px;
+  width: calc(100% + var(--padding));
+  background-color: chartreuse;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 400ms ease;
+}
+
+.card:hover  .card_title::after ,.card:focus-within {
+  transform: scaleX(1);
+}
+.Button{
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: black;
+  background-color:chartreuse;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font: 1em sans-serif;
+  font-weight:bold;
+  transform: translateY(500%);
+  transition: transform 800ms ease ;
+}
+@media(hover){
+  .card{
+    transition: transform 500ms ease;
+  }
+  .cardcontent{
+    transition: background 400ms linear;
+  }
+  .card_title::after{
+    transition: transform 400ms ease;
+  }
+  .Button{
+    transition: transform 800ms ease ;
+  }
+  }
+
+.Button:focus,.Button:hover{
+  background-color: rgb(246, 250, 246);
+}
+.card:hover .Button{
+  transform: translateY(0%);
+}
+@media only screen and (max-width: 1200px){
+  .App{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 4rem;
+  }
+  .card{
+    max-width: 50ch;
+  }
+}
+@media only screen and (max-width: 768px){
+  .App{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+  }
+  .card{
+    max-width: 35ch;
+    max-height: 50vh;
+    margin-top: 5px;
+    padding-top: 1.5em;
+  }
+  .cardcontent{
+    padding-top: 0.9rem;
+  }
+  .greeting>h3{
+    font-size: 1em;
+  }
+  .greeting>h1{
+    font-size: 1.5em;
+  }
+}
