@@ -1,9 +1,14 @@
 
+.App{
+  display: grid;
+  flex-direction: column; 
+   /* background-color: grey; */
+}
 .body{
   display: grid;
   min-height: 100vh;
   place-items: center;
   text-align: center;
-  background-color: #161718;
 }
+
 

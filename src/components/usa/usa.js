@@ -1,15 +1,15 @@
 import React, {UseState, UseEffect} from 'react'
 import axios from 'axios';
-import classes from './tech.module.css';
+import classes from '../card.module.css';
 
 function render1(){
   return []
 }
-function Apple() {
+function usa() {
   const [News, setData] = UseState(()=> render1());
   UseEffect(()=>{
     const loadNews= async()=>{
-      const resp = await axios.get("https://newsapi.org/v2/everything?q=apple&from=2021-10-23&to=2021-10-23&sortBy=popularity&apiKey=18dde8a47aa34ac8b657a9c7a1a76592")
+      const resp = await axios.get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=18dde8a47aa34ac8b657a9c7a1a76592")
       setData(resp.data.articles);
     };
     loadNews();
@@ -18,7 +18,8 @@ function Apple() {
 
   return (
     <div>
-      
+      <h1>Welcome to SRB's news page</h1>
+      <h3>Done using NewsAPI</h3>
      {News && News.map((item)=>{
        return (
          <div>
@@ -34,4 +35,4 @@ function Apple() {
   )
 }
 
-export default Apple
+export default usa
