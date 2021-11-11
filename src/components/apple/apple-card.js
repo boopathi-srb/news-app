@@ -11,12 +11,11 @@ const appleCard = ()=>{
        <img src={Appleimage} alt='apple-news'/>
        <div className={classes.cardcontent}>
          <h1 className={classes.card_title}>Apple - Latest news</h1>
-         
-           <Link to="/Apple">
-             <button className={classes.Button}>
-               See more!
-              </button>
-           </Link>
+         <a href="/Apple" className={classes.Button}>
+            See more!
+         </a>
+          
+             
         
         </div>
      </div>

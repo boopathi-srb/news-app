@@ -15,12 +15,7 @@ const indiaCard=()=> {
        <img src={indiaimage} alt='indiua-news'/>
        <div className={classes.cardcontent}>
          <h1 className={classes.card_title}>India - Latest news</h1>
-         
-         <Link to ="/India">
-           <button className={classes.Button}>See more!</button>
-         </Link>
-         
-        
+         <button href="./India" className={classes.Button}>See more!</button>
          {/* <Switch>
            <Route exact path="/" component={Home}/>
            <Route exact path="/India" component={India}/>
