@@ -1,11 +1,8 @@
-import {Switch, Route,  BrowserRouter as Router } from 'react-router-dom';
-// import India from './India';
+import {  BrowserRouter as Router } from 'react-router-dom';
 import classes from '../card.module.css'
 import indiaimage from './india.png'
-import { Link } from "react-router-dom";
-// import Home from '../../pages/Home/Home';
 import React from 'react';
-// import {browserHistory} from 'react-router'
+
 
 const indiaCard=()=> {
   return(
@@ -15,11 +12,7 @@ const indiaCard=()=> {
        <img src={indiaimage} alt='indiua-news'/>
        <div className={classes.cardcontent}>
          <h1 className={classes.card_title}>India - Latest news</h1>
-         <button href="./India" className={classes.Button}>See more!</button>
-         {/* <Switch>
-           <Route exact path="/" component={Home}/>
-           <Route exact path="/India" component={India}/>
-         </Switch> */}
+         <a href='./india'><button className={classes.Button} >See more!</button></a>
         </div>
      </div>
     </Router>

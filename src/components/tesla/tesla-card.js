@@ -1,7 +1,7 @@
-import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
-import Tesla from './tesla';
+import {BrowserRouter as Router} from 'react-router-dom';
 import classes from '../card.module.css'
 import teslaimage from './tesla.png'
+
 
 const teslaCard = ()=>{
   return(
@@ -11,11 +11,7 @@ const teslaCard = ()=>{
        <img src={teslaimage} alt='tesla-news'/>
        <div className={classes.cardcontent}>
          <h1 className={classes.card_title}>Tesla - Latest news</h1>
-         
-         <Link to ="/Tesla">
-           <button className={classes.Button}>See more!</button>
-         </Link>
-       
+         <a href='./tesla'><button className={classes.Button} >See more!</button></a>
         </div>
      </div>
     </Router>

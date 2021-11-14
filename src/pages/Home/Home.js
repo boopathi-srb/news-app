@@ -6,10 +6,10 @@ import TechcrunchCard from '../../components/techcrunch/techcrunch-card';
 import UsaCard from '../../components/usa/usa-card';
 import WsjCard from '../../components/wsj/wsj-card';
 import IndiaCard from '../../components/india/india-card';
-import Apple from '../../components/apple/Apple';
-import India from '../../components/india/India';
+// import Apple from '../../components/apple/Apple';
+// import India from '../../components/india/India';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 function Home(){
@@ -39,7 +39,7 @@ function Home(){
              <WsjCard/>
            </div>
         </div>
-        <Router>
+        {/* <Router>
           <Switch>
           <Route path="/Apple" exact>
              <Apple/>
@@ -48,7 +48,7 @@ function Home(){
               <India/>
           </Route>
           </Switch>
-        </Router>
+        </Router> */}
     </div>
   )
 };

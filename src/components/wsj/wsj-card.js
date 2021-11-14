@@ -1,5 +1,5 @@
-import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
-import Wsj from './wsj';
+import {  BrowserRouter as Router } from 'react-router-dom';
+
 import classes from '../card.module.css'
 import wsjimage from './wsj.png'
 
@@ -11,11 +11,7 @@ const wsjCard = ()=>{
        <img src={wsjimage} alt='wsj-news'/>
        <div className={classes.cardcontent}>
          <h1 className={classes.card_title}>Latest news from WSJ</h1>
-        
-         <Link to ="/wsj">
-           <button className={classes.Button}>See more!</button>
-         </Link>
-      
+         <a href='./wsj'><button className={classes.Button} >See more!</button></a>
         </div>
      </main>
     </Router>

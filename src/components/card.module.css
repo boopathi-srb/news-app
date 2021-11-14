@@ -1,17 +1,17 @@
 
 .App{
   display: grid;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .card{
   min-width: 30ch;
-  max-height: 55vh;
-  background: rgba(255, 254, 254, 0.3);
+  max-height: 53vh;
+  background: rgba(255, 254, 254, 0.55);
   border-radius: 20px 50px 20px 50px;
   box-shadow: 4px 2px 20px  rgb(10, 10, 10); 
   margin-top: 50px;
   /* overflow: hidden; */
-  padding: 5rem 0 0;
+  padding: 5rem 0em;
   text-align: center;
   position: relative;
  
@@ -22,10 +22,10 @@
 .card::after{
   content: '';
   position: absolute;
-  bottom: -15%;
-  right: -15%;
-  width: 10em;
-  height: 10em;
+  bottom: -20%;
+  right: -20%;
+  width: 13em;
+  height: 13em;
   background: #7bee4d;
   border-radius: 50%;
   z-index: -1;
@@ -34,10 +34,10 @@
 .card::before{
   content: '';
   position: absolute;
-  top: -15%;
-  left: -15%;
-  width: 10em;
-  height: 10em;
+  top: -20%;
+  left: -20%;
+  width: 13em;
+  height: 13em;
   background: #7bee4d;
   border-radius: 50%;
   z-index: -1;
@@ -76,7 +76,7 @@
   left: calc(var(--padding)*-1);
   bottom: -10px;
   width: calc(100% + var(--padding));
-  background-color: chartreuse;
+  background-color: #7bee4d;
   transform: scaleX(0);
   transform-origin: left;
   
@@ -95,6 +95,11 @@
   font-family: Roboto;
   font-weight: 600;
   opacity: 0;
+  text-decoration: none;
+  margin-top: 25px;
+}
+.Button>a{
+  text-decoration: none;
 }
 
   
@@ -105,7 +110,7 @@
   }
   .card::after, .card::before{
     transition: all 300ms ease;
-    z-index: -3;
+    
   }
   
   .cardcontent{
@@ -118,13 +123,6 @@
     transition: opacity 500ms ease;
     cursor: pointer;
   }
-  /* .wrapper{
-    transition: transform 500ms ease;
-  }
-  .wrapper::after, .wrapper::before{
-    transition: all 300ms ease;
-  } */
-  
   
   }
 
@@ -133,6 +131,7 @@
 }
 .card:hover .Button{
   opacity: 1;
+  
 }
 @media only screen and (max-width: 1200px){
   .App{
@@ -155,9 +154,13 @@
   .card{
     min-width: 20ch;
     max-width: 35ch;
-    max-height: 50vh;
+    max-height: 46vh;
     margin-top: 5px;
-    padding-top: 1.5em;
+    padding-top: 2em;
+  }
+  .card::after, .card::before{
+    width: 10em;
+    height: 10em;
   }
   .card_title {
     font-size: 1.5rem;
@@ -165,6 +168,7 @@
   .card>img{
     width: 9rem;
     height: 9rem;
+    padding: 0px 0px;
   }
   .cardcontent{
     padding-top: 0.9rem;
@@ -175,5 +179,8 @@
   
   .card::after .card::before{
     z-index: -2;   
+  }
+  .Button{
+    margin-top: 18px;
   }
 } 

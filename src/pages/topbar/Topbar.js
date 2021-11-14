@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import classes from './topbar.module.css';
 import logo from "./logo.png";
-import { useState } from "react";
+
 
 const Topbar =()=>{
   return(

@@ -18,14 +18,14 @@ function India() {
 
   return (
     <div>
-      <h1>Welcome to SRB's news page</h1>
-      <h3>Done using NewsAPI</h3>
+      <h1>All Headlines related to India</h1>
+      
      {News && News.map((item)=>{
        return (
-         <div>
-          <div className={classes.wrapper} >
+         <div  className={classes.App}>
+          <div className={classes.card} >
            <img alt='news' src={item.urlToImage}/>
-           <h3>{item.title}</h3>
+           <h3 className={classes.card_title}>{item.title}</h3>
            <p>{item.description}</p>
            <button type='primary'>Read More</button>
           </div> 

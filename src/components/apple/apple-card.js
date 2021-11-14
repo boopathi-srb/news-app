@@ -1,5 +1,4 @@
-import { Link, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-// import Apple from './Apple';
+import {  BrowserRouter as Router } from 'react-router-dom';
 import classes from '../card.module.css'
 import Appleimage from './Apple.png'
 
@@ -11,12 +10,7 @@ const appleCard = ()=>{
        <img src={Appleimage} alt='apple-news'/>
        <div className={classes.cardcontent}>
          <h1 className={classes.card_title}>Apple - Latest news</h1>
-         <a href="/Apple" className={classes.Button}>
-            See more!
-         </a>
-          
-             
-        
+         <a href='./Apple'><button className={classes.Button} >See more!</button></a>
         </div>
      </div>
     </Router>

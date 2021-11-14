@@ -1,5 +1,4 @@
-import {Link,Route, BrowserRouter as Router } from 'react-router-dom';
-import Usa from './usa';
+import { BrowserRouter as Router } from 'react-router-dom';
 import classes from '../card.module.css'
 import usaimage from './usa.jpg'
 
@@ -10,12 +9,8 @@ const usaCard = ()=>{
      <div className={classes.card}>
        <img src={usaimage} alt='usa-news'/>
        <div className={classes.cardcontent}>
-         <h1 className={classes.card_title}>USA - Latest Headlines</h1>
-         
-         <Link to ="/usa">
-           <button className={classes.Button}>See more!</button>
-         </Link>
-         
+         <h1 className={classes.card_title}>USA Headlines</h1>
+         <a href='./usa'><button className={classes.Button} >See more!</button></a>
         </div>
      </div>
     </Router>
