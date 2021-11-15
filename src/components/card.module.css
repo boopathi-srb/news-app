@@ -10,7 +10,6 @@
   border-radius: 20px 50px 20px 50px;
   box-shadow: 4px 2px 20px  rgb(10, 10, 10); 
   margin-top: 50px;
-  /* overflow: hidden; */
   padding: 5rem 0em;
   text-align: center;
   position: relative;
@@ -53,16 +52,6 @@
   padding: var(--padding);
   background: none;
 }
- 
-
-/* .card:hover .cardcontent, .card:focus-within {
-  background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 0.5),
-    hsl(0 0% 0% / 1)
-  );
-  border-radius: 0px 50px 20px 50px;
-} */
 
 .card_title{
   position: relative;
@@ -96,7 +85,7 @@
   font-weight: 600;
   opacity: 0;
   text-decoration: none;
-  margin-top: 25px;
+  margin-top: -10px;
 }
 .Button>a{
   text-decoration: none;

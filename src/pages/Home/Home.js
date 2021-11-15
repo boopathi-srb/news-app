@@ -39,16 +39,6 @@ function Home(){
              <WsjCard/>
            </div>
         </div>
-        {/* <Router>
-          <Switch>
-          <Route path="/Apple" exact>
-             <Apple/>
-          </Route>
-          <Route path="/India" exact>
-              <India/>
-          </Route>
-          </Switch>
-        </Router> */}
     </div>
   )
 };

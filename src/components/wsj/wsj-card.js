@@ -10,7 +10,7 @@ const wsjCard = ()=>{
      <main className={classes.card}>
        <img src={wsjimage} alt='wsj-news'/>
        <div className={classes.cardcontent}>
-         <h1 className={classes.card_title}>Latest news from WSJ</h1>
+         <h1 className={classes.card_title}>Latest from WSJ</h1>
          <a href='./wsj'><button className={classes.Button} >See more!</button></a>
         </div>
      </main>

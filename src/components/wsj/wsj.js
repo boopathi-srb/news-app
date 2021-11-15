@@ -18,8 +18,7 @@ function WSJ() {
 
   return (
     <div>
-      <h1>Welcome to SRB's news page</h1>
-      <h3>Done using NewsAPI</h3>
+      <h1 className={classes.greeting}>All Headlines from Wall Street Journal</h1>
      {News && News.map((item)=>{
        return (
          <div className={classes.body}>
@@ -27,7 +26,7 @@ function WSJ() {
            <img alt='news' src={item.urlToImage}/>
            <h3 className={classes.title}>{item.title}</h3>
            <p className={classes.description}>{item.description}</p>
-           <button className={classes.Button} type='primary'>Read More</button>
+           <a href={item.url}><button className={classes.Button_card} type='primary'>Read More</button></a>
           </div> 
          </div>)
      }) }
