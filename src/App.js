@@ -9,6 +9,10 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Footer from './pages/Footer/Footer';
 import Apple from './components/apple/Apple';
 import India from './components/india/India'
+import WSJ from './components/wsj/WSJ';
+import Tesla from './components/tesla/Tesla';
+import Techcrunch from './components/techcrunch/Techcrunch';
+import USA from './components/usa/USA'
 
 
 function App(){
@@ -33,6 +37,18 @@ function App(){
           </Route>
           <Route path="/India" exact>
               <India/>
+          </Route>
+          <Route path="/Tesla" exact>
+              <Tesla/>
+          </Route>
+          <Route path="/Techcrunch" exact>
+              <Techcrunch/>
+          </Route>
+          <Route path="/USA" exact>
+              <USA/>
+          </Route>
+          <Route path="/WSJ" exact>
+              <WSJ/>
           </Route>
         </Switch>
       </div>

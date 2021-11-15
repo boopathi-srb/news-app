@@ -1,7 +1,7 @@
 
 .App{
   display: grid;
-  flex-direction: column; 
+  /* flex-direction: column;  */
 }
 .body{
   display: grid;
