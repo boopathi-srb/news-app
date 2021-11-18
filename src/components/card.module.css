@@ -67,7 +67,7 @@
   bottom: -10px;
   width: calc(100% + var(--padding));
   background-color: #7bee4d;
-  transform: scaleX(0);
+  transform: scaleX(1);
   transform-origin: left;
   
 }
@@ -103,7 +103,7 @@
     
   }
   
-  /* .cardcontent{
+  .cardcontent{
     transition: background 400ms linear;
   }
   .card_title::after{
@@ -112,17 +112,17 @@
   .Button{
     transition: opacity 500ms ease;
     cursor: pointer;
-  } */
+  }
   
   }
 
 .Button:focus,.Button:hover{
   background-color: rgb(246, 250, 246);
 }
-/* .card:hover .Button{
+.card:hover .Button{
   opacity: 1;
   
-} */
+}
 @media only screen and (max-width: 1200px){
   .App{
     display: grid;
@@ -140,6 +140,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     grid-gap: 5rem;
+    z-index: -1;
   }
   .card{
     min-width: 20ch;
@@ -164,7 +165,8 @@
     padding-top: 0.9rem;
   }
   .Button{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 900;
   }
   
   .card::after .card::before{

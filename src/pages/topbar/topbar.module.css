@@ -30,7 +30,8 @@ body{
 }
 
 nav{
-  margin-right: 20px;z-index: 3;
+  margin-right: 20px;
+  z-index: 999;
 }
 .topbar_links a {
   list-style: none;
@@ -109,7 +110,7 @@ nav{
     transform: scale(1,0);
     transform-origin: top;
     transition: transform 300ms ease-in-out;
-    
+    z-index: 999;
   }
   
   .topbar_links> a {
@@ -129,7 +130,7 @@ nav{
 
   .toggle_button:checked ~ nav{
     transform: scale(1,1);
-    z-index: 3;
+    z-index: 999;
   }
  
   .toggle_button_label{

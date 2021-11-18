@@ -23,20 +23,40 @@
   flex-direction: column;
   position: relative;
   list-style: none;
+  text-decoration: none;
 }
-.footer_links::before{
+.title{
+  position: absolute;
+  top: -5px;
+  width: 100px;
+  font-size: 1.21em;
+  padding: 0rem 0rem;
+  border-bottom: 0px;
+}
+.title::before{
   content: '';
   background: orangered;
   height: 125px;
   width: 5px;
   position: absolute;
   left: -50px;
-  top: -40px;
   border-radius: 20px;
 }
-.title{
-  font-size: 1rem;
+.footer_links>a{
+  text-decoration: none;
+  padding: 0.2rem 0.5rem ;
+  color: black;
+  font-weight: 500;
 }
+.footer_links>a:hover{
+   cursor: pointer;
+   transform: scale(1.09);
+}
+.footer_links{
+  position: absolute;
+  top: 50px;
+}
+
 @media only screen and (max-width:768px){
   
   .footer{
