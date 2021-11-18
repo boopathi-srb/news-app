@@ -13,7 +13,7 @@ body{
   text-align: right;
   align-items: right;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 999;
   position: fixed;
 }
 .topbar > img{
@@ -29,8 +29,8 @@ body{
   align-items: center;
 }
 
-.topbar_links{
-  margin-right: 20px;
+nav{
+  margin-right: 20px;z-index: 3;
 }
 .topbar_links a {
   list-style: none;
@@ -88,14 +88,14 @@ body{
     max-width: 50px;
   }
   .topbar{
-    height: 60px;
+    min-height: 60px;
+    width: 100%;
   }
-  nav  {
+  nav {
     background: #7bee4d;
     position: absolute;
     right: 0;
     top: 0;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -106,12 +106,13 @@ body{
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
     text-align: left;  
-    transform: scale(0,0);
+    transform: scale(1,0);
     transform-origin: top;
-    transition: transform 350ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    
   }
   
-  .topbar .rightside .topbar_links a {
+  .topbar_links> a {
     text-decoration: none;
     display: flex;
     font-size: 0.9rem;
@@ -126,8 +127,9 @@ body{
     bottom: -0.2em; 
   }
 
-  .toggle_button:checked~nav{
+  .toggle_button:checked ~ nav{
     transform: scale(1,1);
+    z-index: 3;
   }
  
   .toggle_button_label{

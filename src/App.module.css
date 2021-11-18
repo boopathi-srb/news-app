@@ -9,5 +9,8 @@
   place-items: center;
   text-align: center;
 }
+header{
+  position: fixed;
+}
 
 

@@ -2,6 +2,7 @@
 .App{
   display: grid;
   justify-content: space-evenly;
+  z-index: -1;
 }
 .card{
   min-width: 30ch;
@@ -50,7 +51,7 @@
 .cardcontent{
   --padding: 1.5rem;
   padding: var(--padding);
-  background: none;
+  /* background: none; */
 }
 
 .card_title{
@@ -71,9 +72,9 @@
   
 }
 
-.card:hover  .card_title::after ,.card:focus-within {
+/* .card:hover  .card_title::after ,.card:focus-within {
   transform: scaleX(1);
-}
+} */
 .Button{
   background-color: #7bee4d;
   opacity: 0.7;
@@ -83,7 +84,7 @@
   box-shadow: 2px 2px 10px ;
   font-family: Roboto;
   font-weight: 600;
-  opacity: 0;
+  opacity: 1;
   text-decoration: none;
   margin-top: -10px;
 }
@@ -102,7 +103,7 @@
     
   }
   
-  .cardcontent{
+  /* .cardcontent{
     transition: background 400ms linear;
   }
   .card_title::after{
@@ -111,17 +112,17 @@
   .Button{
     transition: opacity 500ms ease;
     cursor: pointer;
-  }
+  } */
   
   }
 
 .Button:focus,.Button:hover{
   background-color: rgb(246, 250, 246);
 }
-.card:hover .Button{
+/* .card:hover .Button{
   opacity: 1;
   
-}
+} */
 @media only screen and (max-width: 1200px){
   .App{
     display: grid;
@@ -170,6 +171,6 @@
     z-index: -2;   
   }
   .Button{
-    margin-top: 18px;
+    margin-top: -3px;
   }
 } 

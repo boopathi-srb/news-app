@@ -9,13 +9,13 @@ export class Footer extends Component {
       <div className={classes.body}>
 
        <div className={classes.footer}>
-         <img  classname={classes.logo} src={logo} alt="logo"/>
+         <img  classname={classes.footer_logo} src={logo} alt="logo"/>
          <div className={classes.footer_rightside}>
          <h3 className={classes.title}> Quick links</h3>
          <div className={classes.footer_links} >
-            <a href="/">Home</a>
-            <a href="/About">About</a>
-            <a href="/Contact">Contact</a>
+            <a className={classes.footerlink} href="/">Home</a>
+            <a className={classes.footerlink} href="/About">About</a>
+            <a className={classes.footerlink} href="/Contact">Contact</a>
          </div>
          </div>
         </div>
