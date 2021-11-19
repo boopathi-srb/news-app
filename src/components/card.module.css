@@ -1,3 +1,7 @@
+*{
+  /* margin: 0; */
+  padding: auto;
+}
 .App{
   display: grid;
   justify-content: space-evenly;

@@ -28,8 +28,8 @@
 .wrapper::after{
   content: '';
   background-color: #7bee4d;
-  height: 10em;
-  width: 10em;
+  height: 0em;
+  width: 0em;
   position: absolute;
   bottom: -19%;
   right: -9%;
@@ -39,8 +39,8 @@
 .wrapper::before{
   content: '';
   background-color: #7bee4d;
-  height: 10em;
-  width: 10em;
+  height: 0em;
+  width: 0em;
   position: absolute;
   top: -19%;
   left: -9%;
