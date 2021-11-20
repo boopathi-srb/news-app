@@ -109,7 +109,7 @@ nav{
     text-align: left;  
     transform: scale(1,0);
     transform-origin: top;
-    transition: transform 300ms ease-in-out;
+    transition: transform 400ms ease-in-out;
     z-index: 999;
   }
   
@@ -130,7 +130,7 @@ nav{
 
   .toggle_button:checked ~ nav{
     transform: scale(1,1);
-    z-index: 999;
+    z-index: 0;
   }
  
   .toggle_button_label{

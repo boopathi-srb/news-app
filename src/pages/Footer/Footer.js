@@ -6,7 +6,7 @@ import logo from '../topbar/logo.png'
 export class Footer extends Component {
   render() {
     return (
-      <div className={classes.body}>
+      <div className={classes.footerbody}>
 
        <div className={classes.footer}>
          <img  classname={classes.footer_logo} src={logo} alt="logo"/>

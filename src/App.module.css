@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Josefin+Sans:wght@500&display=swap');
 *{
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .App{
   display: grid;
@@ -16,5 +16,9 @@
 header{
   position: fixed;
 }
+/* footer{
+  position: fixed;
+  margin-bottom: 0;
+} */
 
 
