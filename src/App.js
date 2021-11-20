@@ -8,7 +8,7 @@ import Topbar from './pages/topbar/Topbar';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Footer from './pages/Footer/Footer';
 import Apple from './components/apple/Apple';
-import India from './components/india/India'
+import India from './components/india/India';
 import WSJ from './components/wsj/WSJ';
 import Tesla from './components/tesla/Tesla';
 import Techcrunch from './components/techcrunch/Techcrunch';
