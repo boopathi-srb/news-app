@@ -27,7 +27,7 @@ function Tech() {
          <img alt='news' src={item.urlToImage}/>
          <h3 className={classes.title}>{item.title}</h3>
          <p className={classes.description}>{item.description}</p>
-         <a href={item.url}><button className={classes.Butto_card} type='primary'>Read More</button></a>
+         <a href={item.url} className={classes.Button_card} >Read More</a>
         </div> 
        </div>)
      }) }

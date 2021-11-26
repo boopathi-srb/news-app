@@ -116,7 +116,7 @@
     font-size: 1.5rem; 
   }
   .wrapper{
-    width: 35ch;
+    width: 30ch;
     height: 50vh;
     /* background: rgba(226, 222, 222, 0.7); */
     backdrop-filter: blur(50px);
