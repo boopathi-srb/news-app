@@ -12,13 +12,14 @@
   max-height: 53vh;
   background: rgba(255, 254, 254, 0.55);
   border-radius: 20px 50px 20px 50px;
-  box-shadow: 4px 2px 20px  rgb(10, 10, 10); 
+  box-shadow: 4px 2px 40px  rgb(10, 10, 10); 
   margin-top: 50px;
   padding: 5rem 0em;
   text-align: center;
   position: relative;
  
 }
+
 .card:not(.card::after,.card::before){
   overflow: hidden;
 }
@@ -70,15 +71,17 @@
   bottom: -10px;
   width: calc(100% + var(--padding));
   background-color: #7bee4d;
-  transform: scaleX(1);
+  transform: scaleX(0);
   transform-origin: left;
   
 }
 
-/* .card:hover  .card_title::after ,.card:focus-within {
+.card:hover  .card_title::after  {
   transform: scaleX(1);
-} */
+}
 .Button{
+  width: 50ch;
+  height: 53vh;
   background-color: #7bee4d;
   border-radius: 0.8em;
   padding: 0.8em;
@@ -86,9 +89,11 @@
   box-shadow: 2px 2px 10px ;
   font-family: Roboto;
   font-weight: 600;
-  opacity: 1;
+  opacity: 0;
   text-decoration: none;
-  margin-top: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .Button>a{
   text-decoration: none;
@@ -101,18 +106,13 @@
     transition: transform 500ms ease;
   }
   .card::after, .card::before{
-    transition: all 300ms ease;
-    
-  }
-  
-  .cardcontent{
-    transition: background 400ms linear;
+    z-index: -3;
   }
   .card_title::after{
     transition: transform 400ms ease;
   }
   .Button{
-    transition: opacity 500ms ease;
+    /* transition: opacity 500ms ease; */
     cursor: pointer;
   }
   
@@ -121,10 +121,10 @@
 .Button:focus,.Button:hover{
   background-color: rgb(246, 250, 246);
 }
-.card:hover .Button{
+/* .card:hover .Button{
   opacity: 1;
   
-}
+} */
 @media only screen and (max-width: 1200px){
   .App{
     display: grid;
@@ -152,11 +152,11 @@
     padding-top: 2em;
   }
   .card::after, .card::before{
-    width: 10em;
-    height: 10em;
+    width: 9em;
+    height: 9em;
   }
   .card_title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .card>img{
     width: 9rem;
@@ -171,10 +171,15 @@
     font-weight: 900;
   }
   
-  .card::after .card::before{
-    z-index: -2;   
-  }
+  /* .card::after .card::before{
+    z-index: -2;  
+    width: 6em;
+    height: 6em; 
+  } */
   .Button{
-    margin-top: 2px;
+    /* margin-top: 2px; */
+    width: 36ch;
+    height: 48vh;
   }
+    
 } 
