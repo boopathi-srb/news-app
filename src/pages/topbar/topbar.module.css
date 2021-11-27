@@ -57,8 +57,9 @@ nav{
   width: 100%;
   border-radius: 2px;
   background:orangered;
-  transform: scale(0,1);
-  transition: transform 400ms ease-in-out;
+  transform: scale(0,0);
+  transition: transform 300ms ease-in-out;
+  
 }
 .topbar_links a:hover{ 
   cursor: pointer;
@@ -66,6 +67,7 @@ nav{
 }
 .topbar_links a:hover::before{
   transform: scale(1,1);
+  transform-origin: center;
 }
 .toggle_button {
   position: absolute;
@@ -121,11 +123,12 @@ nav{
     justify-content: center;
     align-items: center;
     margin-left: 5px;
-    padding: 4px 0px;
+    padding: 7px 0px;
     
   }
   .topbar_links a::before{
-    bottom: -0.2em; 
+    bottom: 0.3em; 
+    height: 1.5px;
   }
 
   .toggle_button:checked ~ nav{

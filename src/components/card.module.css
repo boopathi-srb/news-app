@@ -1,12 +1,8 @@
-*{
-  /* margin: 0; */
-  padding: auto;
-}
-.App{
+/* .App{
   display: grid;
   justify-content: space-evenly;
   z-index: -1;
-}
+} */
 .card{
   min-width: 30ch;
   max-height: 53vh;

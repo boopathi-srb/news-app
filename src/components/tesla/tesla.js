@@ -10,7 +10,7 @@ function Tesla() {
   useEffect(()=>{
     const loadNews= async()=>{
       const resp = await axios.get
-      ("https://newsapi.org/v2/everything?q=tesla&from=2021-10-15&sortBy=publishedAt&apiKey=18dde8a47aa34ac8b657a9c7a1a76592")
+      ("https://newsapi.org/v2/everything?q=tesla&from=2021-10-27&sortBy=publishedAt&apiKey=18dde8a47aa34ac8b657a9c7a1a76592")
       setData(resp.data.articles);
     };
     loadNews();
