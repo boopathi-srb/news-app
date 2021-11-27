@@ -7,12 +7,12 @@ import Contact from './pages/Contact/Contact';
 import Topbar from './pages/topbar/Topbar';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 // import Footer from './pages/Footer/Footer';
-import Apple from './components/apple/apple';
-import India from './components/india/india';
-import WSJ from './components/wsj/wsj';
-import Tesla from './components/tesla/tesla';
-import Techcrunch from './components/techcrunch/techcrunch';
-import USA from './components/usa/usa'
+import Apple from '../src/components/apple/apple';
+import India from '../src/components/india/india';
+import WSJ from '../src/components/wsj/wsj';
+import Tesla from '../src/components/tesla/tesla';
+import Techcrunch from '.,/src/components/techcrunch/techcrunch';
+import USA from '../src/components/usa/usa'
 
 
 function App(){
