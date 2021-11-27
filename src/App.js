@@ -6,7 +6,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Topbar from './pages/topbar/Topbar';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Footer from './pages/Footer/Footer';
+// import Footer from './pages/Footer/Footer';
 import Apple from './components/apple/apple';
 import India from './components/india/india';
 import WSJ from './components/wsj/wsj';
