@@ -16,8 +16,8 @@ function Home(){
   return(
     <div className={classes.body}>
       <div className={classes.greeting}>
-         <h1>Welcome to SRB's news page</h1>
-         <h3>Done using NewsAPI</h3>
+         {/* <h1>Welcome to SRB's news page</h1>
+         <h3>Done using NewsAPI</h3> */}
       </div>
        <div className={classes.App}>
            <div>

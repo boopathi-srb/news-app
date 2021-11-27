@@ -10,8 +10,8 @@ export class About extends Component {
          This News App is created using NewsAPI and React framework.
        </p>
        <p>
-          My previous project: 
-          <a href="www.amazon-page-by-srb.vercel.app">  Smart watch</a>
+          
+          
        </p>
 
       </div>
